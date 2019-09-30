@@ -75,7 +75,17 @@ p()
 # K -> LEFT ARROW
 # don't ask me why ...
 
-cntrl = {b'H': (-1,0), b'M': (0,1), b'P': (0,-1), b'K': (1,0)}
+cntrl = {
+    b'H': (-1,0), 
+    b'M': (0,1), 
+    b'P': (0,-1), 
+    b'K': (1,0),
+    
+    b'A': (-1,0), 
+    b'C': (0,1), 
+    b'B': (0,-1), 
+    b'D': (1,0),
+    }
 
 while 0 < sx < M and 0 < sy < M:
     c = getch()
